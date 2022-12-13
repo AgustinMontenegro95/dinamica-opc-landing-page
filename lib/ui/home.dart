@@ -1,17 +1,17 @@
+import 'package:dinamica_pay/components/components.dart';
+import 'package:dinamica_pay/utils/utils.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_website/components/components.dart';
-import 'package:flutter_website/utils/utils.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:video_player/video_player.dart';
 
-class HomeBlock extends StatefulWidget {
-  const HomeBlock({Key? key}) : super(key: key);
+class Home extends StatefulWidget {
+  const Home({Key? key}) : super(key: key);
 
   @override
-  _HomeBlockState createState() => _HomeBlockState();
+  _HomeState createState() => _HomeState();
 }
 
-class _HomeBlockState extends State<HomeBlock> {
+class _HomeState extends State<Home> {
   late VideoPlayerController videoController;
   late Future<void> initializeVideoPlayerFuture;
 
@@ -76,7 +76,7 @@ class _HomeBlockState extends State<HomeBlock> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.only(bottom: 20),
+                    padding: const EdgeInsets.only(bottom: 20),
                     child: Text(
                       "Con Dinamica manejás tu dinero como vos querés.\nDescubrí todo lo que podés hacer.",
                       style: TextStyle(

@@ -1,8 +1,7 @@
+import 'package:dinamica_pay/components/components.dart';
+import 'package:dinamica_pay/utils/utils.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_website/components/colors.dart';
-import 'package:flutter_website/components/typography.dart';
-import 'package:flutter_website/utils/utils.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 class Footer extends StatelessWidget {
@@ -23,8 +22,10 @@ class Footer extends StatelessWidget {
           ResponsiveRowColumnItem(
             child: Padding(
               padding: const EdgeInsets.fromLTRB(0, 20, 20, 20),
-              child: Image.asset("assets/images/soludev_logo_mono.png",
-                  height: 100, fit: BoxFit.contain),
+              child: Image.asset(
+                  "assets/images/dinamica/dinamica-center-red.png",
+                  height: 100,
+                  fit: BoxFit.contain),
             ),
           ),
           ResponsiveRowColumnItem(
@@ -42,27 +43,25 @@ class Footer extends StatelessWidget {
                       TextSpan(
                           recognizer: TapGestureRecognizer()
                             ..onTap = () {
-                              openUrl(
-                                  "https://play.google.com/store/apps/developer?id=SoluDev");
+                              openUrl("https://goo.gl/maps/oKWpEDeqCkwfmr8a7");
                             },
-                          text: "Google Play"),
+                          text: "Ubicación"),
                       const TextSpan(text: "  •  "),
                       TextSpan(
                           recognizer: TapGestureRecognizer()
                             ..onTap = () {
-                              openUrl(
-                                  "https://www.youtube.com/channel/UCeldMeYBi5ebvTmB7t_3XLA");
+                              openUrl("http://www.midinamica.com.ar/");
                             },
-                          text: "YouTube"),
+                          text: "Website"),
                       const TextSpan(text: "  •  "),
-                      TextSpan(
+                      /* TextSpan(
                           recognizer: TapGestureRecognizer()
                             ..onTap = () {
                               openUrl(
                                   "https://drive.google.com/file/d/1v2KTZfr2AgrAz4Z10nyYa5Hsyei7EriI/view?usp=sharing");
                             },
                           text: "Políticas de privacidad"),
-                      const TextSpan(text: "  •  "),
+                      const TextSpan(text: "  •  "), */
                       TextSpan(
                           recognizer: TapGestureRecognizer()
                             ..onTap = () {
@@ -88,7 +87,7 @@ class Footer extends StatelessWidget {
                         const TextSpan(text: '\n'),
                         TextSpan(
                             text:
-                                "SoluDev - Santiago del Estero, Argentina - soludevarg@gmail.com - © Copyright SoluDev. Todos los derechos reservados.",
+                                "Dinamica - Peatonal Tucumán 189, Santiago del Estero, Argentina - © Copyright 2023. Todos los derechos reservados.",
                             style: bodyTextStyle.copyWith(
                                 fontSize: 10, color: Colors.white)),
                         const TextSpan(text: '\n'),

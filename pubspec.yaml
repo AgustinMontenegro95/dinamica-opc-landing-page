@@ -1,6 +1,6 @@
-name: flutter_website
+name: dinamica_pay
 publish_to: none
-description: The flutter.dev website rebuilt in Flutter.
+description: Landing page Dinamica Pay
 version: 1.0.0
 
 environment:
@@ -21,8 +21,6 @@ dependencies:
   http: ^0.13.4
   email_validator: ^2.0.1
 
-  
-    
 
 dev_dependencies:
   flutter_test:
@@ -36,6 +34,7 @@ flutter:
     - assets/videos/
     - assets/images/dinamica/
     - assets/images/available-buttons/
+    - assets/images/social-media/
 
   fonts:
     - family: Google Sans

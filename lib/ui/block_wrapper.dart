@@ -1,5 +1,5 @@
+import 'package:dinamica_pay/components/components.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_website/components/components.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 /// A convenience widget to wrap main blocks with:

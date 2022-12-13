@@ -1,15 +1,13 @@
+import 'package:dinamica_pay/ui/block_wrapper.dart';
+import 'package:dinamica_pay/ui/footer.dart';
+import 'package:dinamica_pay/ui/home.dart';
+import 'package:dinamica_pay/ui/menu_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_website/ui/blocks/features.dart';
-import 'package:flutter_website/ui/blocks/footer_block.dart';
-import 'package:flutter_website/ui/blocks/home_block.dart';
-import 'package:flutter_website/ui/menu_bar.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
-import 'package:flutter_website/ui/block_wrapper.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 import 'components/components.dart';
-import 'ui/blocks.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized;
@@ -60,10 +58,6 @@ class MyApp extends StatelessWidget {
 }
 
 List<Widget> blocks = const [
-  BlockWrapper(HomeBlock()),
-  BlockWrapper(Features()),
-  BlockWrapper(Cosmere()),
-  BlockWrapper(SobreNosotros()),
-  BlockWrapper(ContactSoludev()),
+  BlockWrapper(Home()),
   Footer(),
 ];
